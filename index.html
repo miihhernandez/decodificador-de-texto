@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Mensagem Secreta!</title>
+</head>
+
+<body>
+    <div class="woman"><img src="./imagens/Woman2.svg" alt="woman"></div>
+
+    <h1>Decodificador de Textos</h1>
+
+    <label for="mensagem1">Escreva a sua mensagem:</label>
+    <textarea cols="30" rows="3" name="msg1" id="msg1"></textarea>
+
+    <label for="escolhaMetodo">Escolha o Método Abaixo:</label><br>
+    <select name="cifras" id="cifras">
+        <option value="emBranco">Escolha</option>
+        <option value="cesar" id="cCesar">Cifra de César</option>
+        <option value="base" id="b64">Base64</option>
+    </select><br>
+
+    <div class="seletorCesar" style="display: none;">
+        <p>Incremento da Cifra de César - <br>Insira o número da posição</p>
+        <input type="number" name="posiçãoCesar" id="posiçãoCesar" min="1" max="26">
+    </div>
+
+    <div class="radioType">
+        <input type="radio" name="options" value="criptografar" id="criptografar">
+        <label for="criptografar" id="labelCriptografar">Criptografe Aqui</label>
+
+        <input type="radio" name="options" value="descriptografar" id="descriptografar">
+        <label for="descriptografar" id="labelDescriptografar">Descriptografe Aqui</label>
+    </div>
+
+    <div class="botaomsg">
+        <input type="submit" id="submit" value="Criptografar" style="display: flex;">
+        <input type="submit" id="submit" value="Descriptografar" style="display: none;">
+    </div>
+
+    <label for="resultado" id="resultado"> </label>
+    <textarea name="msg2" id="msg2" cols="30" rows="3"></textarea>
+
+    <script src="script.js"></script>
+
+    <footer class="footer">
+        <p>Criado por: Milena Souza - 2022&copy;</p>
+    </footer>
+</body>
+</html>
