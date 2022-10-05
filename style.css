@@ -55,14 +55,14 @@ label {
 }
 
 .footer {
-    position: absolute;
+    position: initial;
     text-align: center;
     bottom: 0;
-    width: 96%;
     padding: 10px;
     font-size: 13px;
     background: black;
     color: white;
+    margin-top: 26px;
 }
 
 @media screen and (max-width: 480px) {
